@@ -8,7 +8,7 @@ import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-// import Profile_Photo from "./Images/profile_photo.JPG";
+import Avatar from "./Images/avatar.jpg";
 function Header() {
   return (
     <div className="header">
@@ -22,12 +22,13 @@ function Header() {
 
       {/* using reusable component */}
       <div className="header__right">
+        {/* <img src={ProfilePhoto} alt=""/> */}
         <HeaderOptions Icon={HomeIcon} title="Home" />
         <HeaderOptions Icon={SupervisorAccountIcon} title="My Network" />
         <HeaderOptions Icon={BusinessCenterIcon} title="jobs" />
         <HeaderOptions Icon={ChatIcon} title="Messaging" />
         <HeaderOptions Icon={NotificationsIcon} title="Notification" />
-        {/* <HeaderOptions avatar="Profile_Photo" title="Me" /> */}
+        <HeaderOptions avatar={Avatar} title="Me" />
       </div>
     </div>
   );
